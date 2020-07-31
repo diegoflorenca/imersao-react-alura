@@ -1,15 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-import Home from './pages/Home';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import CadastroVideo from './pages/cadastro/video';
-import CadastroCategoria from './pages/cadastro/categoria/index.jsx';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CadastroVideo from "./pages/cadastro/video";
+import CadastroCategoria from "./pages/cadastro/categoria";
 
-const Pagina404 = () => {
-  return <div>Página 404</div>;
-};
+// Desafio master blaster na descrição
+const Pagina404 = () => <div>Página 404</div>;
 
 ReactDOM.render(
   <BrowserRouter>
@@ -20,6 +19,5 @@ ReactDOM.render(
       <Route component={Pagina404} />
     </Switch>
   </BrowserRouter>,
-
-  document.getElementById('root')
+  document.getElementById("root")
 );
